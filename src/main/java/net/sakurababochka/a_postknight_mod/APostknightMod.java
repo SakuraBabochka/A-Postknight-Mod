@@ -35,6 +35,6 @@ public class APostknightMod
     {
         // some preinit code
         LOGGER.info("A Postknight Mod loaded.");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("If this system is correctly functioning, the following will display the ID of a Bronze Nugget: {}", ModItems.BRONZE_NUGGET.get().getRegistryName());
     }
 }
