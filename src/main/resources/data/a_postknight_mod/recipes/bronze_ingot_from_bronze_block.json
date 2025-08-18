@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bronze_ingot",
+  "ingredients": [
+    {
+      "item": "a_postknight_mod:bronze_block"
+    }
+  ],
+  "result": {
+    "item": "a_postknight_mod:bronze_ingot",
+    "count": 9
+  }
+}

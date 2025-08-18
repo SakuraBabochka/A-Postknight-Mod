@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:bronze_ore",
+    "a_postknight_mod:deepslate_bronze_ore",
+    "a_postknight_mod:bronze_block",
+    "a_postknight_mod:raw_bronze_block",
+    "a_postknight_mod:platinum_ore",
+    "a_postknight_mod:deepslate_platinum_ore",
+    "a_postknight_mod:deepslate_silver_ore",
+    "a_postknight_mod:silver_ore",
+    "a_postknight_mod:platinum_block",
+    "a_postknight_mod:raw_platinum_block",
+    "a_postknight_mod:raw_silver_block",
+    "a_postknight_mod:silver_block",
+    "a_postknight_mod:dragonite_ore",
+    "a_postknight_mod:deepslate_dragonite_ore",
+    "a_postknight_mod:dragonite_block",
+    "a_postknight_mod:raw_dragonite_block"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:bronze_ore",
+    "a_postknight_mod:deepslate_bronze_ore",
+    "a_postknight_mod:bronze_block",
+    "a_postknight_mod:raw_bronze_block"
+  ]
+}

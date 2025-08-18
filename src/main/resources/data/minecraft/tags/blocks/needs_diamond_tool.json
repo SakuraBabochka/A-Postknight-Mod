@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:dragonite_ore",
+    "a_postknight_mod:deepslate_dragonite_ore",
+    "a_postknight_mod:dragonite_block",
+    "a_postknight_mod:raw_dragonite_block"
+  ]
+}

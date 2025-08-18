@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dragonite_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "a_postknight_mod:dragonite_nugget"
+    }
+  },
+  "result": {
+    "item": "a_postknight_mod:dragonite_ingot"
+  }
+}

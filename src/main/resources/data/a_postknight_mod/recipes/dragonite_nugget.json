@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "a_postknight_mod:dragonite_ingot"
+    }
+  ],
+  "result": {
+    "item": "a_postknight_mod:dragonite_nugget",
+    "count": 9
+  }
+}

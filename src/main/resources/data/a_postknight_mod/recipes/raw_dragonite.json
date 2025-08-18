@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "a_postknight_mod:raw_dragonite_block"
+    }
+  ],
+  "result": {
+    "item": "a_postknight_mod:raw_dragonite",
+    "count": 9
+  }
+}

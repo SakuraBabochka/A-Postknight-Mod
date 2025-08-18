@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "a_postknight_mod:bronze_ingot"
+    }
+  ],
+  "result": {
+    "item": "a_postknight_mod:bronze_nugget",
+    "count": 9
+  }
+}

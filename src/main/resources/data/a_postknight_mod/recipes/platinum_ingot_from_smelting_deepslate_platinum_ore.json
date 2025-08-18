@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "platinum_ingot",
+  "ingredient": {
+    "item": "a_postknight_mod:deepslate_platinum_ore"
+  },
+  "result": "a_postknight_mod:platinum_ingot",
+  "experience": 1,
+  "cookingtime": 200
+}
