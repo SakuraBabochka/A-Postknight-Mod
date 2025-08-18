@@ -1,0 +1,35 @@
+{
+  "item.a_postknight_mod.bronze_nugget": "Bronze Nugget",
+  "item.a_postknight_mod.platinum_nugget": "Platinum Nugget",
+  "item.a_postknight_mod.silver_nugget": "Silver Nugget",
+  "item.a_postknight_mod.dragonite_nugget": "Dragonite Nugget",
+  "item.a_postknight_mod.bronze_ingot": "Bronze Ingot",
+  "item.a_postknight_mod.platinum_ingot": "Platinum Ingot",
+  "item.a_postknight_mod.silver_ingot": "Silver Ingot",
+  "item.a_postknight_mod.dragonite_ingot": "Dragonite Ingot",
+  "item.a_postknight_mod.raw_bronze": "Raw Bronze",
+  "item.a_postknight_mod.raw_platinum": "Raw Platinum",
+  "item.a_postknight_mod.raw_dragonite": "Raw Dragonite",
+  "item.a_postknight_mod.raw_silver": "Raw Silver",
+
+
+
+
+
+  "block.a_postknight_mod.bronze_ore": "Bronze Ore",
+  "block.a_postknight_mod.bronze_block": "Bronze Block",
+  "block.a_postknight_mod.raw_bronze_block": "Raw Bronze Block",
+  "block.a_postknight_mod.deepslate_bronze_ore": "Deepslate Bronze Ore",
+  "block.a_postknight_mod.silver_ore": "Silver Ore",
+  "block.a_postknight_mod.silver_block": "Silver Block",
+  "block.a_postknight_mod.raw_silver_block": "Raw Silver Block",
+  "block.a_postknight_mod.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.a_postknight_mod.platinum_ore": "Platinum Ore",
+  "block.a_postknight_mod.platinum_block": "Platinum Block",
+  "block.a_postknight_mod.raw_platinum_block": "Raw Platinum Block",
+  "block.a_postknight_mod.deepslate_platinum_ore": "Deepslate Platinum Ore",
+  "block.a_postknight_mod.dragonite_ore": "Dragonite Ore",
+  "block.a_postknight_mod.dragonite_block": "Dragonite Block",
+  "block.a_postknight_mod.raw_dragonite_block": "Raw Dragonite Block",
+  "block.a_postknight_mod.deepslate_dragonite_ore": "Deepslate Dragonite Ore"
+}
