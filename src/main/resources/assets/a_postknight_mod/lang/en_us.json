@@ -31,5 +31,13 @@
   "block.a_postknight_mod.dragonite_ore": "Dragonite Ore",
   "block.a_postknight_mod.dragonite_block": "Dragonite Block",
   "block.a_postknight_mod.raw_dragonite_block": "Raw Dragonite Block",
-  "block.a_postknight_mod.deepslate_dragonite_ore": "Deepslate Dragonite Ore"
+  "block.a_postknight_mod.deepslate_dragonite_ore": "Deepslate Dragonite Ore",
+
+
+
+
+
+  "itemGroup.postknight_resources": "A Postknight Mod: Resources",
+  "itemGroup.postknight_spawn_eggs": "A Postknight Mod: Spawn Eggs",
+  "itemGroup.postknight_equipment": "A Postknight Mod: Equipment"
 }
