@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:cypress_log",
+    "a_postknight_mod:cypress_wood",
+    "a_postknight_mod:stripped_cypress_log",
+    "a_postknight_mod:stripped_cypress_wood"
+  ]
+}

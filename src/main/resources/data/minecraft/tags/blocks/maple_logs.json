@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:maple_log",
+    "a_postknight_mod:maple_wood",
+    "a_postknight_mod:stripped_maple_log",
+    "a_postknight_mod:stripped_maple_wood"
+  ]
+}

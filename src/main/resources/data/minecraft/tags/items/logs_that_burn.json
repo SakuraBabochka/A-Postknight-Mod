@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:walnut_logs",
+    "#minecraft:coral_logs",
+    "#minecraft:cypress_logs",
+    "#minecraft:maple_logs",
+    "#minecraft:frozen_fir_logs"
+  ]
+}

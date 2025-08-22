@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:coral_log",
+    "a_postknight_mod:coral_wood",
+    "a_postknight_mod:stripped_coral_log",
+    "a_postknight_mod:stripped_coral_wood"
+  ]
+}

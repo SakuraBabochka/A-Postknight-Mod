@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:walnut_planks",
+    "a_postknight_mod:coral_planks",
+    "a_postknight_mod:cypress_planks",
+    "a_postknight_mod:frozen_fir_planks",
+    "a_postknight_mod:maple_planks"
+  ]
+}

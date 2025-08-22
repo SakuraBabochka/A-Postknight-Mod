@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:frozen_fir_log",
+    "a_postknight_mod:frozen_fir_wood",
+    "a_postknight_mod:stripped_frozen_fir_log",
+    "a_postknight_mod:stripped_frozen_fir_wood"
+  ]
+}

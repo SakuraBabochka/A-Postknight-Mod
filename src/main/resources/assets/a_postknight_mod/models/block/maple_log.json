@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "a_postknight_mod:block/maple_log_top",
+    "side": "a_postknight_mod:block/maple_log"
+  }
+}
