@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "a_postknight_mod:frozen_fir_planks"
+    }
+  },
+  "result": {
+    "item": "a_postknight_mod:frozen_fir_pressure_plate"
+  }
+}

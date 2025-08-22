@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "minecraft:maple_logs"
+    }
+  ],
+  "result": {
+    "item": "a_postknight_mod:maple_planks",
+    "count": 4
+  }
+}

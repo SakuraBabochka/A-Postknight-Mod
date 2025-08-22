@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "a_postknight_mod:coral_planks"
+    }
+  },
+  "result": {
+    "item": "a_postknight_mod:coral_trapdoor",
+    "count": 2
+  }
+}

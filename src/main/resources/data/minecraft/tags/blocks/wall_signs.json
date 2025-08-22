@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:walnut_wall_sign",
+    "a_postknight_mod:maple_wall_sign",
+    "a_postknight_mod:frozen_fir_wall_sign",
+    "a_postknight_mod:cypress_wall_sign",
+    "a_postknight_mod:coral_wall_sign"
+  ]
+}

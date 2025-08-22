@@ -16,6 +16,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sakurababochka.a_postknight_mod.APostknightMod;
 import net.sakurababochka.a_postknight_mod.block.custom.ModFlammableRotatedPillarBlock;
+import net.sakurababochka.a_postknight_mod.block.custom.ModStandingSignBlock;
+import net.sakurababochka.a_postknight_mod.block.custom.ModWallSignBlock;
+import net.sakurababochka.a_postknight_mod.block.entity.ModWoodTypes;
 import net.sakurababochka.a_postknight_mod.item.ModCreativeModeTabs;
 import net.sakurababochka.a_postknight_mod.item.ModItems;
 
@@ -102,6 +105,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> WALNUT_TRAPDOOR = registerBlock("walnut_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> WALNUT_WALL_SIGN = registerBlockWithoutBlockItem("walnut_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.WALNUT));
+    public static final RegistryObject<Block> WALNUT_SIGN = registerBlockWithoutBlockItem("walnut_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.WALNUT));
 
     public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -142,6 +149,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> MAPLE_WALL_SIGN = registerBlockWithoutBlockItem("maple_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.MAPLE));
+    public static final RegistryObject<Block> MAPLE_SIGN = registerBlockWithoutBlockItem("maple_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.MAPLE));
 
     public static final RegistryObject<Block> FROZEN_FIR_LOG = registerBlock("frozen_fir_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -182,6 +193,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> FROZEN_FIR_TRAPDOOR = registerBlock("frozen_fir_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> FROZEN_FIR_WALL_SIGN = registerBlockWithoutBlockItem("frozen_fir_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.FROZEN_FIR));
+    public static final RegistryObject<Block> FROZEN_FIR_SIGN = registerBlockWithoutBlockItem("frozen_fir_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.FROZEN_FIR));
 
     public static final RegistryObject<Block> CYPRESS_LOG = registerBlock("cypress_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -222,6 +237,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CYPRESS_WALL_SIGN = registerBlockWithoutBlockItem("cypress_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CYPRESS));
+    public static final RegistryObject<Block> CYPRESS_SIGN = registerBlockWithoutBlockItem("cypress_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CYPRESS));
 
     public static final RegistryObject<Block> CORAL_LOG = registerBlock("coral_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -262,11 +281,18 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CORAL_TRAPDOOR = registerBlock("coral_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CORAL_WALL_SIGN = registerBlockWithoutBlockItem("coral_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CORAL));
+    public static final RegistryObject<Block> CORAL_SIGN = registerBlockWithoutBlockItem("coral_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CORAL));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
+    }
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,

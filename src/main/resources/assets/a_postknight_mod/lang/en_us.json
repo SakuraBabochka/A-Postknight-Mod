@@ -46,6 +46,7 @@
   "block.a_postknight_mod.walnut_pressure_plate": "Walnut Pressure Plate",
   "block.a_postknight_mod.walnut_door": "Walnut Door",
   "block.a_postknight_mod.walnut_trapdoor": "Walnut Trapdoor",
+  "block.a_postknight_mod.walnut_sign": "Walnut Sign",
   "block.a_postknight_mod.maple_log": "Maple Log",
   "block.a_postknight_mod.maple_wood": "Maple Wood",
   "block.a_postknight_mod.stripped_maple_log": "Stripped Maple Log",
@@ -59,6 +60,7 @@
   "block.a_postknight_mod.maple_pressure_plate": "Maple Pressure Plate",
   "block.a_postknight_mod.maple_door": "Maple Door",
   "block.a_postknight_mod.maple_trapdoor": "Maple Trapdoor",
+  "block.a_postknight_mod.maple_sign": "Maple Sign",
   "block.a_postknight_mod.frozen_fir_log": "Frozen Fir Log",
   "block.a_postknight_mod.frozen_fir_wood": "Frozen Fir Wood",
   "block.a_postknight_mod.stripped_frozen_fir_log": "Stripped Frozen Fir Log",
@@ -72,6 +74,7 @@
   "block.a_postknight_mod.frozen_fir_pressure_plate": "Frozen Fir Pressure Plate",
   "block.a_postknight_mod.frozen_fir_door": "Frozen Fir Door",
   "block.a_postknight_mod.frozen_fir_trapdoor": "Frozen Fir Trapdoor",
+  "block.a_postknight_mod.frozen_fir_sign": "Frozen Fir Sign",
   "block.a_postknight_mod.cypress_log": "Cypress Log",
   "block.a_postknight_mod.cypress_wood": "Cypress Wood",
   "block.a_postknight_mod.stripped_cypress_log": "Stripped Cypress Log",
@@ -85,6 +88,7 @@
   "block.a_postknight_mod.cypress_pressure_plate": "Cypress Pressure Plate",
   "block.a_postknight_mod.cypress_door": "Cypress Door",
   "block.a_postknight_mod.cypress_trapdoor": "Cypress Trapdoor",
+  "block.a_postknight_mod.cypress_sign": "Cypress Sign",
   "block.a_postknight_mod.coral_log": "Coral Log",
   "block.a_postknight_mod.coral_wood": "Coral Wood",
   "block.a_postknight_mod.stripped_coral_log": "Stripped Coral Log",
@@ -98,6 +102,7 @@
   "block.a_postknight_mod.coral_pressure_plate": "Coral Pressure Plate",
   "block.a_postknight_mod.coral_door": "Coral Door",
   "block.a_postknight_mod.coral_trapdoor": "Coral Trapdoor",
+  "block.a_postknight_mod.coral_sign": "Coral Sign",
 
 
 

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "a_postknight_mod:frozen_fir_planks"
+    }
+  },
+  "result": {
+    "item": "a_postknight_mod:frozen_fir_slab",
+    "count": 6
+  }
+}

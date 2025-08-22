@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "a_postknight_mod:stripped_coral_log"
+    }
+  },
+  "result": {
+    "item": "a_postknight_mod:stripped_coral_wood",
+    "count": 3
+  }
+}

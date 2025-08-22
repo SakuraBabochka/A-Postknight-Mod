@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "minecraft:frozen_fir_logs"
+    }
+  ],
+  "result": {
+    "item": "a_postknight_mod:frozen_fir_planks",
+    "count": 4
+  }
+}
