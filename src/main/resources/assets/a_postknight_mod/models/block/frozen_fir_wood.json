@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "a_postknight_mod:block/frozen_fir_log",
+    "side": "a_postknight_mod:block/frozen_fir_log"
+  }
+}
