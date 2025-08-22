@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:walnut_leaves",
+    "a_postknight_mod:maple_leaves",
+    "a_postknight_mod:frozen_fir_leaves",
+    "a_postknight_mod:cypress_leaves",
+    "a_postknight_mod:coral_leaves"
+  ]
+}

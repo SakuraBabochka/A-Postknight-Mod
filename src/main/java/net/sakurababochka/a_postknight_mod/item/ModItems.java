@@ -68,6 +68,9 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().tab(ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB).stacksTo(16),
                     ModBlocks.CORAL_SIGN.get(), ModBlocks.CORAL_WALL_SIGN.get()));
 
+    public static final RegistryObject<Item> WALNUT = ITEMS.register("walnut",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

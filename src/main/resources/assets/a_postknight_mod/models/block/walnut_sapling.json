@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "a_postknight_mod:block/walnut_sapling"
+  }
+}

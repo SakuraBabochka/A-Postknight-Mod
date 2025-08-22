@@ -3,14 +3,120 @@ package net.sakurababochka.a_postknight_mod.world.feature;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.MegaPineFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.MegaJungleTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.sakurababochka.a_postknight_mod.block.ModBlocks;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> WALNUT_TREE =
+            FeatureUtils.register("walnut", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.WALNUT_LOG.get()),
+                    new ForkingTrunkPlacer(5,6,3),
+                    BlockStateProvider.simple(ModBlocks.WALNUT_LEAVES.get()),
+                    new BlobFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),4),
+                    new TwoLayersFeatureSize(1,0,2)).build());
+
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> MAPLE_TREE =
+            FeatureUtils.register("maple", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.MAPLE_LOG.get()),
+                    new StraightTrunkPlacer(5,6,3),
+                    BlockStateProvider.simple(ModBlocks.MAPLE_LEAVES.get()),
+                    new SpruceFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),ConstantInt.of(4)),
+                    new TwoLayersFeatureSize(1,0,2)).build());
+
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> FROZEN_FIR_TREE =
+            FeatureUtils.register("frozen_fir", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.FROZEN_FIR_LOG.get()),
+                    new StraightTrunkPlacer(5,6,3),
+                    BlockStateProvider.simple(ModBlocks.FROZEN_FIR_LEAVES.get()),
+                    new SpruceFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),ConstantInt.of(4)),
+                    new TwoLayersFeatureSize(1,0,2)).build());
+
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CYPRESS_TREE =
+            FeatureUtils.register("cypress", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.CYPRESS_LOG.get()),
+                    new MegaJungleTrunkPlacer(5,6,3),
+                    BlockStateProvider.simple(ModBlocks.CYPRESS_LEAVES.get()),
+                    new MegaPineFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),ConstantInt.of(4)),
+                    new TwoLayersFeatureSize(1,0,2)).build());
+
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CORAL_TREE =
+            FeatureUtils.register("coral", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.CORAL_LOG.get()),
+                    new BendingTrunkPlacer(5,6,3,4,ConstantInt.of(4)),
+                    BlockStateProvider.simple(ModBlocks.CORAL_LEAVES.get()),
+                    new AcaciaFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0)),
+                    new TwoLayersFeatureSize(1,0,2)).build());
+
+
+
+    public static final Holder<PlacedFeature> WALNUT_CHECKED =
+            PlacementUtils.register("walnut_checked", WALNUT_TREE,
+                    PlacementUtils.filteredByBlockSurvival(ModBlocks.WALNUT_SAPLING.get()));
+
+    public static final Holder<PlacedFeature> MAPLE_CHECKED =
+            PlacementUtils.register("maple_checked", MAPLE_TREE,
+                    PlacementUtils.filteredByBlockSurvival(ModBlocks.MAPLE_SAPLING.get()));
+
+    public static final Holder<PlacedFeature> FROZEN_FIR_CHECKED =
+            PlacementUtils.register("frozen_fir_checked", FROZEN_FIR_TREE,
+                    PlacementUtils.filteredByBlockSurvival(ModBlocks.FROZEN_FIR_SAPLING.get()));
+
+    public static final Holder<PlacedFeature> CYPRESS_CHECKED =
+            PlacementUtils.register("cypress_checked", CYPRESS_TREE,
+                    PlacementUtils.filteredByBlockSurvival(ModBlocks.CYPRESS_SAPLING.get()));
+
+    public static final Holder<PlacedFeature> CORAL_CHECKED =
+            PlacementUtils.register("coral_checked", CORAL_TREE,
+                    PlacementUtils.filteredByBlockSurvival(ModBlocks.CORAL_SAPLING.get()));
+
+
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> WALNUT_SPAWN =
+            FeatureUtils.register("walnut_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(WALNUT_CHECKED,
+                            0.5F)), WALNUT_CHECKED));
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> MAPLE_SPAWN =
+            FeatureUtils.register("maple_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(MAPLE_CHECKED,
+                            0.5F)), MAPLE_CHECKED));
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> FROZEN_FIR_SPAWN =
+            FeatureUtils.register("frozen_fir_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(FROZEN_FIR_CHECKED,
+                            0.5F)), FROZEN_FIR_CHECKED));
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> CYPRESS_SPAWN =
+            FeatureUtils.register("cypress_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(CYPRESS_CHECKED,
+                            0.5F)), CYPRESS_CHECKED));
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> CORAL_SPAWN =
+            FeatureUtils.register("coral_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(CORAL_CHECKED,
+                            0.5F)), CORAL_CHECKED));
+
+
 
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_BRONZE_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.BRONZE_ORE.get().defaultBlockState()),

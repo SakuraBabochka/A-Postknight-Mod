@@ -5,11 +5,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.sakurababochka.a_postknight_mod.APostknightMod;
 import net.sakurababochka.a_postknight_mod.world.feature.gen.ModOreGeneration;
+import net.sakurababochka.a_postknight_mod.world.feature.gen.ModTreeGeneration;
 
 @Mod.EventBusSubscriber(modid = APostknightMod.MOD_ID)
 public class ModWorldEvents {
     @SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
+        ModTreeGeneration.generateTrees(event);
         ModOreGeneration.generateOres(event);
     }
 }

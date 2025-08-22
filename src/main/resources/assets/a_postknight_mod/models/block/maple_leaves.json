@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "a_postknight_mod:block/maple_leaves"
+  }
+}
