@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:walnut_slab",
+    "a_postknight_mod:maple_slab",
+    "a_postknight_mod:frozen_fir_slab",
+    "a_postknight_mod:cypress_slab",
+    "a_postknight_mod:coral_slab"
+  ]
+}

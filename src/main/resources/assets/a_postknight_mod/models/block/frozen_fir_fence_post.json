@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "a_postknight_mod:block/frozen_fir_planks"
+  }
+}

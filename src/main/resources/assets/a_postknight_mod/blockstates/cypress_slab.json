@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "a_postknight_mod:block/cypress_slab"
+    },
+    "type=double": {
+      "model": "a_postknight_mod:block/cypress_planks"
+    },
+    "type=top": {
+      "model": "a_postknight_mod:block/cypress_slab_top"
+    }
+  }
+}

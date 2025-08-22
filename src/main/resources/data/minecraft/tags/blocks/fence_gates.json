@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:walnut_fence_gate",
+    "a_postknight_mod:maple_fence_gate",
+    "a_postknight_mod:frozen_fir_fence_gate",
+    "a_postknight_mod:cypress_fence_gate",
+    "a_postknight_mod:coral_fence_gate"
+  ]
+}
