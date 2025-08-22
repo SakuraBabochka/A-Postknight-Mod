@@ -21,6 +21,7 @@ import net.sakurababochka.a_postknight_mod.block.custom.ModWallSignBlock;
 import net.sakurababochka.a_postknight_mod.block.entity.ModWoodTypes;
 import net.sakurababochka.a_postknight_mod.item.ModCreativeModeTabs;
 import net.sakurababochka.a_postknight_mod.item.ModItems;
+import net.sakurababochka.a_postknight_mod.world.feature.tree.*;
 
 import java.util.function.Supplier;
 
@@ -362,15 +363,15 @@ public class ModBlocks {
             }, ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     public static final RegistryObject<Block> WALNUT_SAPLING = registerBlock("walnut_sapling",
-            () -> new SaplingBlock(, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new WalnutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("maple_sapling",
-            () -> new SaplingBlock(, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> FROZEN_FIR_SAPLING = registerBlock("frozen_fir_sapling",
-            () -> new SaplingBlock(, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new FrozenFirTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CYPRESS_SAPLING = registerBlock("cypress_sapling",
-            () -> new SaplingBlock(, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new CypressTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CORAL_SAPLING = registerBlock("coral_sapling",
-            () -> new SaplingBlock(, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new CoralTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
