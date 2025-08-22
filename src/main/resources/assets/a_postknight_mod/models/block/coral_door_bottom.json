@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "a_postknight_mod:block/coral_door_top",
+    "bottom": "a_postknight_mod:block/coral_door_bottom"
+  }
+}

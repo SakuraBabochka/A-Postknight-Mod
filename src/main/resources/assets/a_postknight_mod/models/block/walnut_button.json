@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "a_postknight_mod:block/walnut_planks"
+  }
+}

@@ -94,6 +94,14 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> WALNUT_FENCE_GATE = registerBlock("walnut_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> WALNUT_BUTTON = registerBlock("walnut_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> WALNUT_PRESSURE_PLATE = registerBlock("walnut_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> WALNUT_DOOR = registerBlock("walnut_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> WALNUT_TRAPDOOR = registerBlock("walnut_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -126,6 +134,14 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> MAPLE_FENCE_GATE = registerBlock("maple_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> MAPLE_BUTTON = registerBlock("maple_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> MAPLE_DOOR = registerBlock("maple_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     public static final RegistryObject<Block> FROZEN_FIR_LOG = registerBlock("frozen_fir_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -158,6 +174,14 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> FROZEN_FIR_FENCE_GATE = registerBlock("frozen_fir_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> FROZEN_FIR_BUTTON = registerBlock("frozen_fir_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> FROZEN_FIR_PRESSURE_PLATE = registerBlock("frozen_fir_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> FROZEN_FIR_DOOR = registerBlock("frozen_fir_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> FROZEN_FIR_TRAPDOOR = registerBlock("frozen_fir_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     public static final RegistryObject<Block> CYPRESS_LOG = registerBlock("cypress_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -190,6 +214,14 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CYPRESS_FENCE_GATE = registerBlock("cypress_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CYPRESS_BUTTON = registerBlock("cypress_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CYPRESS_PRESSURE_PLATE = registerBlock("cypress_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CYPRESS_DOOR = registerBlock("cypress_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     public static final RegistryObject<Block> CORAL_LOG = registerBlock("coral_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
@@ -222,6 +254,14 @@ public class ModBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CORAL_FENCE_GATE = registerBlock("coral_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CORAL_BUTTON = registerBlock("coral_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CORAL_PRESSURE_PLATE = registerBlock("coral_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CORAL_DOOR = registerBlock("coral_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CORAL_TRAPDOOR = registerBlock("coral_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

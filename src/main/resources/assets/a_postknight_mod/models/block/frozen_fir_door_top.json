@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "a_postknight_mod:block/frozen_fir_door_top",
+    "bottom": "a_postknight_mod:block/frozen_fir_door_bottom"
+  }
+}

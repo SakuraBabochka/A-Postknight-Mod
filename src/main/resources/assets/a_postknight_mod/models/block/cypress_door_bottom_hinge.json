@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "a_postknight_mod:block/cypress_door_top",
+    "bottom": "a_postknight_mod:block/cypress_door_bottom"
+  }
+}
