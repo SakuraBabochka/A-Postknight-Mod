@@ -5,12 +5,11 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
@@ -59,7 +58,7 @@ public class ModConfiguredFeatures {
                     new FancyTrunkPlacer(5,6,3),
                     BlockStateProvider.simple(ModBlocks.CORAL_LEAVES.get()),
                     new AcaciaFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1)),
-                    new TwoLayersFeatureSize(1,0,2)).build());
+                    new TwoLayersFeatureSize(1,0,2)).dirt(BlockStateProvider.simple(Blocks.SAND)).build());
 
 
 
@@ -109,6 +108,128 @@ public class ModConfiguredFeatures {
             FeatureUtils.register("coral_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(CORAL_CHECKED,
                             0.5F)), CORAL_CHECKED));
+
+
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> CERULEAF =
+            FeatureUtils.register("flower_ceruleaf", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CERULEAF.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> PUFFWORT =
+            FeatureUtils.register("flower_puffwort", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PUFFWORT.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> SAGE =
+            FeatureUtils.register("flower_sage", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SAGE.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> LOW_MALLOW =
+            FeatureUtils.register("flower_low_mallow", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LOW_MALLOW.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> ROTASEED =
+            FeatureUtils.register("flower_rotaseed", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ROTASEED.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> VALLEY_BELLS =
+            FeatureUtils.register("flower_valley_bells", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.VALLEY_BELLS.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> KUROOT =
+            FeatureUtils.register("flower_kuroot", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.KUROOT.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> FORESIGHT_FRUIT =
+            FeatureUtils.register("flower_foresight_frut", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.FORESIGHT_FRUIT.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> GOLDEN_BASIL =
+            FeatureUtils.register("flower_golden_basil", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GOLDEN_BASIL.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> EVERCHERRY =
+            FeatureUtils.register("flower_evercherry", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.EVERCHERRY.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> INVIGOROOT =
+            FeatureUtils.register("flower_invigoroot", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.INVIGOROOT.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> NIGHTLIGHT_CAP =
+            FeatureUtils.register("flower_nightlight_cap", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.NIGHTLIGHT_CAP.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> TINGLETOE =
+            FeatureUtils.register("flower_tingletoe", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TINGLETOE.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> WINTERMINT =
+            FeatureUtils.register("flower_wintermint", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WINTERMINT.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> AFLOE_VERA =
+            FeatureUtils.register("flower_afloe_vera", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AFLOE_VERA.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> BRIGHTFERN =
+            FeatureUtils.register("flower_brightfern", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BRIGHTFERN.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> HARDTHORN =
+            FeatureUtils.register("flower_hardthorn", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.HARDTHORN.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> DYNAPOD =
+            FeatureUtils.register("flower_dynapod", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DYNAPOD.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> SOURBULB =
+            FeatureUtils.register("flower_sourbulb", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SOURBULB.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> AZURE_PEA =
+            FeatureUtils.register("flower_azure_pea", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AZURE_PEA.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> RARENANA =
+            FeatureUtils.register("flower_rarenana", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RARENANA.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> SEA_DATES =
+            FeatureUtils.register("flower_sea_dates", Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SEA_DATES.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> OASIS_GRAPES =
+            FeatureUtils.register("flower_oasis_grapes", Feature.FLOWER,
+                    new RandomPatchConfiguration(24, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.OASIS_GRAPES.get())))));
+
+    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> CACTOPUS_POD =
+            FeatureUtils.register("flower_cactopus_pod", Feature.FLOWER,
+                    new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CACTOPUS_POD.get())))));
 
 
 

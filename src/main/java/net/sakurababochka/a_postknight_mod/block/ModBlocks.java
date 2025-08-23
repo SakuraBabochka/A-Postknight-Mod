@@ -2,6 +2,7 @@ package net.sakurababochka.a_postknight_mod.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -15,9 +16,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sakurababochka.a_postknight_mod.APostknightMod;
-import net.sakurababochka.a_postknight_mod.block.custom.ModFlammableRotatedPillarBlock;
-import net.sakurababochka.a_postknight_mod.block.custom.ModStandingSignBlock;
-import net.sakurababochka.a_postknight_mod.block.custom.ModWallSignBlock;
+import net.sakurababochka.a_postknight_mod.block.custom.*;
 import net.sakurababochka.a_postknight_mod.block.entity.ModWoodTypes;
 import net.sakurababochka.a_postknight_mod.item.ModCreativeModeTabs;
 import net.sakurababochka.a_postknight_mod.item.ModItems;
@@ -371,7 +370,113 @@ public class ModBlocks {
     public static final RegistryObject<Block> CYPRESS_SAPLING = registerBlock("cypress_sapling",
             () -> new SaplingBlock(new CypressTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
     public static final RegistryObject<Block> CORAL_SAPLING = registerBlock("coral_sapling",
-            () -> new SaplingBlock(new CoralTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+            () -> new ModSaplingBlock(new CoralTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING), () -> Blocks.SAND), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+
+
+
+
+
+    public static final RegistryObject<Block> CERULEAF = registerBlock("ceruleaf",
+            () -> new FlowerBlock(MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> PUFFWORT = registerBlock("puffwort",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> SAGE = registerBlock("sage",
+            () -> new FlowerBlock(MobEffects.SATURATION, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> LOW_MALLOW = registerBlock("low_mallow",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> ROTASEED = registerBlock("rotaseed",
+            () -> new FlowerBlock(MobEffects.SLOW_FALLING, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> VALLEY_BELLS = registerBlock("valley_bells",
+            () -> new FlowerBlock(MobEffects.HEALTH_BOOST, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> KUROOT = registerBlock("kuroot",
+            () -> new FlowerBlock(MobEffects.CONFUSION, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> FORESIGHT_FRUIT = registerBlock("foresight_fruit",
+            () -> new FlowerBlock(MobEffects.NIGHT_VISION, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> GOLDEN_BASIL = registerBlock("golden_basil",
+            () -> new FlowerBlock(MobEffects.HERO_OF_THE_VILLAGE, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> EVERCHERRY = registerBlock("evercherry",
+            () -> new FlowerBlock(MobEffects.SATURATION, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> INVIGOROOT = registerBlock("invigoroot",
+            () -> new FlowerBlock(MobEffects.DAMAGE_RESISTANCE, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> NIGHTLIGHT_CAP = registerBlock("nightlight_cap",
+            () -> new FlowerBlock(MobEffects.POISON, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> TINGLETOE = registerBlock("tingletoe",
+            () -> new FlowerBlock(MobEffects.HUNGER, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> WINTERMINT = registerBlock("wintermint",
+            () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> AFLOE_VERA = registerBlock("afloe_vera",
+            () -> new FlowerBlock(MobEffects.DAMAGE_RESISTANCE, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> BRIGHTFERN = registerBlock("brightfern",
+            () -> new FlowerBlock(MobEffects.GLOWING, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> HARDTHORN = registerBlock("hardthorn",
+            () -> new FlowerBlock(MobEffects.UNLUCK, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> DYNAPOD = registerBlock("dynapod",
+            () -> new FlowerBlock(MobEffects.DIG_SPEED, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> SOURBULB = registerBlock("sourbulb",
+            () -> new FlowerBlock(MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> AZURE_PEA = registerBlock("azure_pea",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 8, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> RARENANA = registerBlock("rarenana",
+            () -> new FlowerBlock(MobEffects.HERO_OF_THE_VILLAGE, 10, BlockBehaviour.Properties.copy(Blocks.POPPY)), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> SEA_DATES = registerBlock("sea_dates",
+            () -> new ModFlowerBlock(MobEffects.SATURATION, 6, BlockBehaviour.Properties.copy(Blocks.POPPY), () -> Blocks.SAND), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> OASIS_GRAPES = registerBlock("oasis_grapes",
+            () -> new ModFlowerBlock(MobEffects.LUCK, 8, BlockBehaviour.Properties.copy(Blocks.POPPY), () -> Blocks.SAND), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+    public static final RegistryObject<Block> CACTOPUS_POD = registerBlock("cactopus_pod",
+            () -> new ModFlowerBlock(MobEffects.HEALTH_BOOST, 10, BlockBehaviour.Properties.copy(Blocks.POPPY), () -> Blocks.SAND), ModCreativeModeTabs.POSTKNIGHT_RESOURCE_TAB);
+
+    public static final RegistryObject<Block> POTTED_CERULEAF = registerBlockWithoutBlockItem("potted_ceruleaf",
+            () -> new FlowerPotBlock(null, ModBlocks.CERULEAF, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_PUFFWORT = registerBlockWithoutBlockItem("potted_puffwort",
+            () -> new FlowerPotBlock(null, ModBlocks.PUFFWORT, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_SAGE = registerBlockWithoutBlockItem("potted_sage",
+            () -> new FlowerPotBlock(null, ModBlocks.SAGE, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_LOW_MALLOW = registerBlockWithoutBlockItem("potted_low_mallow",
+            () -> new FlowerPotBlock(null, ModBlocks.LOW_MALLOW, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_ROTASEED = registerBlockWithoutBlockItem("potted_rotaseed",
+            () -> new FlowerPotBlock(null, ModBlocks.ROTASEED, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_VALLEY_BELLS = registerBlockWithoutBlockItem("potted_valley_bells",
+            () -> new FlowerPotBlock(null, ModBlocks.VALLEY_BELLS, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_KUROOT = registerBlockWithoutBlockItem("potted_kuroot",
+            () -> new FlowerPotBlock(null, ModBlocks.KUROOT, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_FORESIGHT_FRUIT = registerBlockWithoutBlockItem("potted_foresight_fruit",
+            () -> new FlowerPotBlock(null, ModBlocks.FORESIGHT_FRUIT, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_GOLDEN_BASIL = registerBlockWithoutBlockItem("potted_golden_basil",
+            () -> new FlowerPotBlock(null, ModBlocks.GOLDEN_BASIL, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_EVERCHERRY = registerBlockWithoutBlockItem("potted_evercherry",
+            () -> new FlowerPotBlock(null, ModBlocks.EVERCHERRY, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_INVIGOROOT = registerBlockWithoutBlockItem("potted_invigoroot",
+            () -> new FlowerPotBlock(null, ModBlocks.INVIGOROOT, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_NIGHTLIGHT_CAP = registerBlockWithoutBlockItem("potted_nightlight_cap",
+            () -> new FlowerPotBlock(null, ModBlocks.NIGHTLIGHT_CAP, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_TINGLETOE = registerBlockWithoutBlockItem("potted_tingletoe",
+            () -> new FlowerPotBlock(null, ModBlocks.TINGLETOE, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_WINTERMINT = registerBlockWithoutBlockItem("potted_wintermint",
+            () -> new FlowerPotBlock(null, ModBlocks.WINTERMINT, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_AFLOE_VERA = registerBlockWithoutBlockItem("potted_afloe_vera",
+            () -> new FlowerPotBlock(null, ModBlocks.AFLOE_VERA, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_BRIGHTFERN = registerBlockWithoutBlockItem("potted_brightfern",
+            () -> new FlowerPotBlock(null, ModBlocks.BRIGHTFERN, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_HARDTHORN = registerBlockWithoutBlockItem("potted_hardthorn",
+            () -> new FlowerPotBlock(null, ModBlocks.HARDTHORN, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_DYNAPOD = registerBlockWithoutBlockItem("potted_dynapod",
+            () -> new FlowerPotBlock(null, ModBlocks.DYNAPOD, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_SOURBULB = registerBlockWithoutBlockItem("potted_sourbulb",
+            () -> new FlowerPotBlock(null, ModBlocks.SOURBULB, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_AZURE_PEA = registerBlockWithoutBlockItem("potted_azure_pea",
+            () -> new FlowerPotBlock(null, ModBlocks.AZURE_PEA, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_RARENANA = registerBlockWithoutBlockItem("potted_rarenana",
+            () -> new FlowerPotBlock(null, ModBlocks.RARENANA, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_SEA_DATES = registerBlockWithoutBlockItem("potted_sea_dates",
+            () -> new FlowerPotBlock(null, ModBlocks.SEA_DATES, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_OASIS_GRAPES = registerBlockWithoutBlockItem("potted_oasis_grapes",
+            () -> new FlowerPotBlock(null, ModBlocks.OASIS_GRAPES, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+    public static final RegistryObject<Block> POTTED_CACTOPUS_POD = registerBlockWithoutBlockItem("potted_cactopus_pod",
+            () -> new FlowerPotBlock(null, ModBlocks.CACTOPUS_POD, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY)));
+
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
