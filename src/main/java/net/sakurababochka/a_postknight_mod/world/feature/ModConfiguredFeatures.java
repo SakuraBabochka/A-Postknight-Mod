@@ -12,15 +12,9 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.MegaPineFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.MegaJungleTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.*;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.sakurababochka.a_postknight_mod.block.ModBlocks;
 
@@ -54,17 +48,17 @@ public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CYPRESS_TREE =
             FeatureUtils.register("cypress", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                     BlockStateProvider.simple(ModBlocks.CYPRESS_LOG.get()),
-                    new MegaJungleTrunkPlacer(5,6,3),
+                    new StraightTrunkPlacer(5,6,3),
                     BlockStateProvider.simple(ModBlocks.CYPRESS_LEAVES.get()),
-                    new MegaPineFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0),ConstantInt.of(4)),
+                    new DarkOakFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0)),
                     new TwoLayersFeatureSize(1,0,2)).build());
 
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CORAL_TREE =
             FeatureUtils.register("coral", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                     BlockStateProvider.simple(ModBlocks.CORAL_LOG.get()),
-                    new BendingTrunkPlacer(5,6,3,4,ConstantInt.of(4)),
+                    new FancyTrunkPlacer(5,6,3),
                     BlockStateProvider.simple(ModBlocks.CORAL_LEAVES.get()),
-                    new AcaciaFoliagePlacer(ConstantInt.of(2),ConstantInt.of(0)),
+                    new AcaciaFoliagePlacer(ConstantInt.of(2),ConstantInt.of(1)),
                     new TwoLayersFeatureSize(1,0,2)).build());
 
 

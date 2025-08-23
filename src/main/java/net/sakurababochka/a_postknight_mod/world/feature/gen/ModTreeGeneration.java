@@ -19,10 +19,12 @@ public class ModTreeGeneration {
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
         if (types.contains(BiomeDictionary.Type.FOREST)) {
-            List<Holder<PlacedFeature>> base =
+            if (types.contains(BiomeDictionary.Type.JUNGLE)) {}
+            else {
+                List<Holder<PlacedFeature>> base =
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
-            base.add(ModPlacedFeatures.WALNUT_PLACED);
+                base.add(ModPlacedFeatures.WALNUT_PLACED);}
         }
         if (types.contains(BiomeDictionary.Type.SWAMP)) {
             List<Holder<PlacedFeature>> base =
@@ -30,13 +32,13 @@ public class ModTreeGeneration {
 
             base.add(ModPlacedFeatures.MAPLE_PLACED);
         }
-        if (types.contains(BiomeDictionary.Type.SNOWY)) {
+        if (types.contains(BiomeDictionary.Type.CONIFEROUS)) {
             List<Holder<PlacedFeature>> base =
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
             base.add(ModPlacedFeatures.FROZEN_FIR_PLACED);
         }
-        if (types.contains(BiomeDictionary.Type.CONIFEROUS)) {
+        if (types.contains(BiomeDictionary.Type.JUNGLE)) {
             List<Holder<PlacedFeature>> base =
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
