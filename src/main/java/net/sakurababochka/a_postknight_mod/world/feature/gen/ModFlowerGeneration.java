@@ -47,7 +47,7 @@ public class ModFlowerGeneration {
             base.add(ModPlacedFeatures.NIGHTLIGHT_CAP_PLACED);
         }
 
-        if (types.contains(BiomeDictionary.Type.CONIFEROUS)) {
+        if (types.contains(BiomeDictionary.Type.SNOWY)) {
             List<Holder<PlacedFeature>> base =
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 

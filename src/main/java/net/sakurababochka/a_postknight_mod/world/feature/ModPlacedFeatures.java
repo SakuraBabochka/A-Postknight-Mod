@@ -25,7 +25,7 @@ public class ModPlacedFeatures {
 
     public static final Holder<PlacedFeature> CORAL_PLACED = PlacementUtils.register("coral_placed",
             ModConfiguredFeatures.CORAL_SPAWN, VegetationPlacements.treePlacement(
-                    PlacementUtils.countExtra(3, 0.1f, 2)));
+                    PlacementUtils.countExtra(0, 0.15f, 2)));
 
 
 

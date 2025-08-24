@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "a_postknight_mod:potted_ceruleaf",
+    "a_postknight_mod:potted_puffwort",
+    "a_postknight_mod:potted_sage",
+    "a_postknight_mod:potted_low_mallow",
+    "a_postknight_mod:potted_rotaseed",
+    "a_postknight_mod:potted_valley_bells",
+    "a_postknight_mod:potted_kuroot",
+    "a_postknight_mod:potted_foresight_fruit",
+    "a_postknight_mod:potted_golden_basil",
+    "a_postknight_mod:potted_evercherry",
+    "a_postknight_mod:potted_invigoroot",
+    "a_postknight_mod:potted_nightlight_cap",
+    "a_postknight_mod:potted_tingletoe",
+    "a_postknight_mod:potted_wintermint",
+    "a_postknight_mod:potted_afloe_vera",
+    "a_postknight_mod:potted_brightfern",
+    "a_postknight_mod:potted_hardthorn",
+    "a_postknight_mod:potted_dynapod",
+    "a_postknight_mod:potted_sourbulb",
+    "a_postknight_mod:potted_azure_pea",
+    "a_postknight_mod:potted_rarenana",
+    "a_postknight_mod:potted_sea_dates",
+    "a_postknight_mod:potted_oasis_grapes",
+    "a_postknight_mod:potted_cactopus_pod"
+  ]
+}

@@ -33,10 +33,12 @@ public class ModTreeGeneration {
             base.add(ModPlacedFeatures.MAPLE_PLACED);
         }
         if (types.contains(BiomeDictionary.Type.CONIFEROUS)) {
-            List<Holder<PlacedFeature>> base =
-                    event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            if (types.contains(BiomeDictionary.Type.SNOWY)) {
+                List<Holder<PlacedFeature>> base =
+                        event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
-            base.add(ModPlacedFeatures.FROZEN_FIR_PLACED);
+                base.add(ModPlacedFeatures.FROZEN_FIR_PLACED);
+            }
         }
         if (types.contains(BiomeDictionary.Type.JUNGLE)) {
             List<Holder<PlacedFeature>> base =
